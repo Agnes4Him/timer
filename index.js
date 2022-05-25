@@ -1,16 +1,17 @@
         const second = document.getElementById("second");
         const minute = document.getElementById("minute");
         const hour = document.getElementById("hour");
-        const button = document.getElementById("control");
+        const controlButton = document.getElementById("control");
+        const resetButton = document.getElementById("reset");
 
         var secTime = null;
         var minTime = null;
         var hourTime = null;
-        button.addEventListener('click', ()=> {
+        controlButton.addEventListener('click', ()=> {
     
-           if (button.innerHTML == "Start") {
+           if (controlButton.innerHTML == "Start") {
 
-            button.innerHTML = "Stop";
+            controlButton.innerHTML = "Stop";
 
             secTime = setInterval(runSecTime, 1000)
             function runSecTime() {
@@ -41,10 +42,19 @@
 
            }else {
 
-               button.innerHTML = "Start";
+               controlButton.innerHTML = "Start";
                
                clearInterval(secTime);
                clearInterval(minTime);
                clearInterval(hourTime);
            }
         })
+
+        resetButton.addEventListener('click', () => {
+            if (second.innerHTML != 0 || minute.innerHTML != 0 || hour.innerHTML != 0) {
+                second.innerHTML = 0;
+                minute.innerHTML = 0;
+                hour.innerHTML = 0;
+            }
+        })
+

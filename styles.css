@@ -28,10 +28,23 @@ body {
     color:hotpink;
     font-size:5em;
 }
+#reset {
+    padding:0.5rem 1rem;
+    font-size:1.75em;  
+    border-radius:1rem; 
+    border:none;
+    background-color:rgb(11, 67, 236);
+    color:white;
+    margin-right:1em;
+}
+#reset:hover {
+    background-color:royalblue;
+    color:aliceblue;
+}
 
 #control {
-    padding:0.5rem 2rem;
-    font-size:2em;  
+    padding:0.5rem 1rem;
+    font-size:1.75em;  
     border-radius:1rem; 
     border:none;
     background-color:royalblue; 
