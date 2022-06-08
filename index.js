@@ -4,9 +4,9 @@
         const controlButton = document.getElementById("control");
         const resetButton = document.getElementById("reset");
 
-        var secTime = null;
-        var minTime = null;
-        var hourTime = null;
+        let secTime = null;
+        let minTime = null;
+        let hourTime = null;
         controlButton.addEventListener('click', ()=> {
     
            if (controlButton.innerHTML == "Start") {
