@@ -61,5 +61,13 @@ body {
     #heading {
         font-size:3rem;
         text-align:center;
-    }    
+    }
+    
+    #watch {
+        font-size:5rem;
+    }
+
+    #reset, #control {
+        font-size:1.75rem
+    }
 }
